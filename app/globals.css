@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inter+Tight:wght@100&family=Inter:wght@200;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(34, 255, 240, 0.4);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: 0.3s;
+  width: 24px;
+  background-color: rgb(0, 255, 208);
+}
+
+.icons {
+  pointer-events: auto;
+  margin: 10px;
+  filter: invert(60%);
+  padding: 2px;
+}
+
+.icons:hover {
+  transition: 0.3s;
+  filter: invert(100%);
+}
+
+a {
+  padding: 10px ;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+  color: aliceblue;
+}
+
+a:hover {
+  translate: 10px;
+  transition: 0.3s;
+  color: aqua;
+  cursor: pointer;
+}
