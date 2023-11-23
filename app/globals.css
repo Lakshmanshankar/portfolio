@@ -16,7 +16,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: black;
+  background-color: rgb(15 23 42);
 }
 
 ::-webkit-scrollbar-track {
@@ -47,11 +47,12 @@ body {
 }
 
 a {
-  padding: 10px ;
+  padding: 10px;
   text-decoration: none;
   font-weight: 500;
   transition: 0.2s;
   color: aliceblue;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -59,4 +60,16 @@ a:hover {
   transition: 0.3s;
   color: aqua;
   cursor: pointer;
+}
+
+.links{
+  border:1px solid rgb(0, 205, 205);
+}
+
+.hoverable{
+  border: 0.3px solid transparent;
+}
+.hoverable:hover{
+  transition:0.3s;
+  border: 0.12px solid rgba(0, 255, 255,0.3);
 }
