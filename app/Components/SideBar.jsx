@@ -29,12 +29,14 @@ export function SideBar({ children }) {
         dom.style.backgroundImage = `none`
     }
     return (
-        <div className=' text-white min-h-screen min-w-full bg-slate-900  lg:fixed overflow-scroll  scroll-smooth selection:text-teal-800 selection:bg-teal-200 ' id='roseover' onMouseMove={throttledCallback} onMouseLeave={handleMouseLeave}>
-            <div className=" lg:w-1/2 bg-transparent  lg:fixed pointer-events-none pl-5"  >
+        <div className=' text-white min-h-screen w-full min-w-full bg-slate-900  lg:fixed overflow-scroll  scroll-smooth selection:text-teal-800 selection:bg-teal-200 ' id='roseover' onMouseMove={throttledCallback} onMouseLeave={handleMouseLeave}>
+            <div className=" lg:w-1/2 bg-transparent  lg:fixed pointer-events-none "  >
                 <div className=' pt-24 px-5 w-full lg:pt-24 lg:pl-24 pb-10'>
                     <h1 className={` pointer-events-auto text-3xl  md:my-2  md:text-5xl font-extrabold ${inter.className}`}> Lakshman shankar</h1>
                     <h2 className={` my-2 text-lg font-bold  md:my-1 lg:text-2xl text-zinc-200  ${interlight.className}`}> Software Application Develeoper </h2>
-                    <p className={`  my-2 text-md md:text-lg w-5/6 font-light  md:my-2  lg:text-md text-zinc-200 text-clip  ${interlight.className}`}>  I create Beautiful Web  Applications, Automating Things on the ServerApplications, Automating Things on the Server </p>
+                    <p className={`  my-2 text-md md:text-lg w-5/6 font-light  md:my-2  lg:text-md text-zinc-200 text-clip  ${interlight.className}`}>
+                        Passionate web app developer with expertise in Linux and cloud technologies, crafting seamless digital experiences.
+                    </p>
                 </div>
                 <div className={`hidden md:flex w-fit lg:px-24 lg:py-3 font-thin  justify-start flex-col ${interlight}`}>
                     <Link href="#about" className='  text-lg pointer-events-auto cursor-pointer '> About</Link>
@@ -61,7 +63,7 @@ export function SideBar({ children }) {
                     </ul>
                 </div>
             </div>
-            <main className=' lg:w-1/2 lg:absolute right-0 sticky lg:pt-14 pl-4 lg:pr-24' onMouseMove={throttledCallback} onMouseLeave={handleMouseLeave}>
+            <main className=' lg:w-1/2 lg:absolute right-0 sticky lg:pt-14 lg:pr-24' onMouseMove={throttledCallback} onMouseLeave={handleMouseLeave}>
                 {children}
             </main>
         </div>
