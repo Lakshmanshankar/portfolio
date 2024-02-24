@@ -4,11 +4,11 @@ import Link from "next/link";
 const inter = Inter({ weight: "400", subsets: ["latin"] });
 export default function HomePage() {
   return (
-    <>
-      <section className="relative py-10 md:py-0" id="about">
+    <div className="lg:absolute">
+      <section className="w-full relative md:py-10 md:py-0" id="about">
         <Link href="#about" className='  text-lg pointer-events-auto cursor-pointer sticky'> About</Link>
         <div className="  md:text-lg lg:pb-24 py-10 px-8 md:pr-8 lg:px-0 lg:w-5/6 text-slate-400 ">
-          <span className={` text-md md:text-lg block ${inter.className}`}>
+          <span className={` text-md text-lg md:text-lg block ${inter.className}`}>
             I'm a recent Computer Science grad. I began coding with Python in
             2020, explored web development with JavaScript, and was fascinated
             by Linux and cloud things in my fourth semester. It opened my
@@ -131,6 +131,6 @@ export default function HomePage() {
 
       </section>
 
-    </>
+    </div>
   );
 }
