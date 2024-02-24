@@ -45,7 +45,7 @@ body {}
   filter: invert(100%);
 }
 
-a {
+ a {
   padding: 10px;
   text-decoration: none;
   font-weight: 500;
@@ -57,10 +57,10 @@ a {
 a:hover {
   translate: 10px;
   transition: 0.3s;
-  color: aqua;
   cursor: pointer;
+  text-decoration: underline;
 }
-
+/*
 .links {
   border: 0px solid rgb(0, 205, 205);
 }
@@ -72,15 +72,15 @@ a:hover {
 .hoverable:hover {
   transition: 0.3s;
   border: 0.12px solid rgba(0, 255, 255, 0.3);
-}
+} */
 
-.gradient-text {
+/* .gradient-text {
   background: linear-gradient(120deg, #0891b2, #8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
-
+/* 
 @media (max-width:768px) {
   .mobile-nav {
     width: 100%;
@@ -98,4 +98,4 @@ a:hover {
     align-items: center;
     justify-content: center;
   }
-}
+} */

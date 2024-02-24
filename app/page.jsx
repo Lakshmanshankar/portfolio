@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="lg:absolute">
       <section className="w-full relative md:py-10 md:py-0" id="about">
-        <Link href="#about" className='  text-lg pointer-events-auto cursor-pointer sticky'> About</Link>
+        <Link href="#about" className='  text-lg pointer-events-auto cursor-pointer sticky text-justify'> About</Link>
         <div className="  md:text-lg lg:pb-24 py-10 px-8 md:pr-8 lg:px-0 lg:w-5/6 text-slate-400 ">
           <span className={` text-md text-lg md:text-lg block ${inter.className}`}>
             I'm a recent Computer Science grad. I began coding with Python in
@@ -72,6 +72,7 @@ export default function HomePage() {
             </div>
             <p className=" w-full text-slate-400 lg:py-5">
               Student performance tracking web app: Teachers securely log in, access student data, post marks, with encrypted passwords (bcrypt), JWT authentication, and dynamic data visualization via Chart.js (Radar and Doughnut charts).
+              {`<b> Hll </b>`}
             </p>
             <ul className="flex list-none flex-wrap w-full">
               <li className=" p-1 px-2 links rounded-2xl bg-opacity-20  m-1 bg-teal-600"> Next.js </li>
@@ -82,7 +83,6 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
-
 
         <div className=" px-3  py-3 flex flex-col md:flex-row justify-between w-full hover:transition-all rounded-lg  hover:bg-slate-400  hover:bg-opacity-10 overable lg:p-4 lg:rounded-lg hover:text-teal-300  my-5">
           <div className=" font-bold text-slate-500 lg:w-2/5">April 2023</div>

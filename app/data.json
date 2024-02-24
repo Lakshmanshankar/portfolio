@@ -1,0 +1,143 @@
+{
+  "name": "Lakshmanshankar",
+  "role": "Software Developer",
+  "description": "Passionate web app developer with expertise in Linux and cloud technologies, crafting seamless digital experiences.",
+  "paths": [
+    {
+      "path": "#about",
+      "name": "About"
+    },
+    {
+      "path": "#experience",
+      "name": "Experience"
+    },
+    {
+      "path": "#project",
+      "name": "Project"
+    }
+  ],
+  "links": [
+    {
+      "url": "github.svg",
+      "link": "https://github.com/Lakshmanshankar"
+    },
+    {
+      "url": "leetcode.svg",
+      "link": "https://leetcode.com/lakshmanashankrc"
+    },
+    {
+      "url": "linked.svg",
+      "link": "https://linkedin.com/in/Lakshmanshankar"
+    },
+    {
+      "url": "twitter.svg",
+      "link": "https://twitter.com/10Lakshman"
+    }
+  ],
+  "about": [
+    "I'm a recent Computer Science grad. I began coding with Python in 2020, explored web development with JavaScript, and was fascinated by Linux and cloud things in my fourth semester. It opened my eyes to how apps are deployed and maintained on a large scale.",
+    "I also have a solid understanding of different programming languages like Python, C++, and JavaScript. These skills, combined with my problem-solving mindset, have helped me tackle 400+ LeetCode problems, providing a different perspective to approach challenges",
+    "I  started using Linux in January 2022; it's almost 2 years now, and I absolutely love everything about Linux. I began with Vim and moved to Neovim, and my dotfiles repository has grown a lot since then. Additionally, I love dark color schemes and gradient texts; you can see them in all my works.",
+    "I 'm currently looking for job opportunities. This year has been full of unexpected changes, but I'm hopeful that it will lead to a job offer for me."
+  ],
+  "resumeLink": "Lakshpy.pdf",
+  "projects": [
+    {
+      "name": "Honey script Interpreter",
+      "description": " Sweet little TypeScript interpreter, HoneyScript, powered by Deno. Highlights include tokenization, AST nodes, and runtime value support, bringing a delightful scripting experience.Supports Basic Features like variable, conditionals,loops and Functions.",
+      "source": "",
+      "demo": "",
+      "technologies": [
+        "Deno",
+        "TypeScript",
+        "AST parser"
+      ]
+    },
+    {
+      "name": "Student Performance",
+      "description": "Student performance tracking web app: Teachers securely log in, access student data, post marks, with encrypted passwords (bcrypt), JWT authentication, and dynamic data visualization via Chart.js (Radar and Doughnut charts",
+      "source": "",
+      "demo": "",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "name": "Find Blood Donor Application",
+      "description": "Find Blood Donor app with a stunning UI, crafted using React App and Daisy UI frameworks. Seamlessly search for specific blood groups in designated locations, ensuring a user-friendly experience for quick and efficient donor connections",
+      "source": "",
+      "demo": "",
+      "technologies": [
+        "Next.js",
+        "Express.js",
+        "TypeScript",
+        "MySQL"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "from": "Aug-22",
+      "to": "Sep-22",
+      "company": "Avasoft",
+      "description": [
+        "During my internship, I explored networking, fundamental Linux operations, and automation using Ansible. I honed my skills in CentOS 7, a prominent Linux distribution, and gained practical insights into cloud computing, particularly in Microsoft Azure."
+      ],
+      "skills": [
+        "Ansible",
+        "Azure",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "from": "Dec-23",
+      "to": "Present",
+      "company": "Codevantage",
+      "description": [
+        "During my internship, I explored networking, fundamental Linux operations, and automation using Ansible. I honed my skills in CentOS 7, a prominent Linux distribution, and gained practical insights into cloud computing, particularly in Microsoft Azure."
+      ],
+      "skills": [
+        "Next.js",
+        "Firebase",
+        "Tailwind",
+        "React"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "background": "bg-slate-950",
+      "circleGradient": "#1e293b",
+      "gradient": "gradient-blue",
+      "primaryText": "text-slate-400",
+      "secondaryText": "#FFF",
+      "selectBg": "bg-teal-400",
+      "selectText": "text-teal-400",
+      "hoverColor":"text-teal-500"
+    },
+    {
+      "background": "bg-slate-950",
+      "circleGradient": "#4a044e",
+      "gradient": "gradient-red",
+      "primaryText": "text-slate-400",
+      "secondaryText": "text-stone-600",
+      "selectBg": "bg-fuchsia-400",
+      "selectText": "text-fuchsia-400",
+      "hoverColor": "text-teal-500"
+    },
+    {
+      "background": "bg-slate-950",
+      "circleGradient": "hsla(84, 81%, 42%, 0.43)",
+      "gradient": "gradient-green",
+      "primaryText": "text-slate-400",
+      "secondaryText": "text-stone-600",
+      "selectBg": "bg-teal-400",
+      "selectText": "text-teal-400",
+      "hoverColor": "text-teal-500"
+    }
+  ],
+  "current": 1
+}
