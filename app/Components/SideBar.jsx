@@ -60,7 +60,7 @@ export function Sidebar({ children }) {
             </li>
             <li>
               <a href="https://www.linkedin.com/in/Lakshmanshankar/">
-                <img src='linkedin.svg' className=' cursor-pointer icons w-8 lg:w-10 lg:mx-2'></img>
+                <img src='linkedin.svg' className=' cursor-pointer icons w-8 lg:w-10 lg:mx-2 flex'></img>
               </a>
             </li>
           </ul>
