@@ -1,30 +1,65 @@
+:root {
+  /*fallback: */
+  --hover-text: #2dd4bf;
+  --hover-bg: #134e4a50;
+}
 
-body{
+.pinkify {
+  --hover-text: #e879f9;
+  --hover-bg: #d946ef20;
+}
+
+.links:hover {
+  transition: 0.3s;
+  color: var(--hover-text);
+}
+
+.secondary-text:hover {
+  color: var(--hover-text);
+}
+
+.background-current {
+  background: var(--hover-bg);
+}
+
+.og-background:hover {
+  transition: 0.3s;
+  background: var(--hover-bg);
+}
+
+.animate-translate:hover .translate-px {
+  transition: 0.3s;
+  translate: 5px;
+}
+
+body {
   background: rgba(2, 6, 23, 1);
 }
 
-.gradient{
-    -webkit-text-fill-color: transparent;
+.gradient {
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-blue {
-    background: -webkit-linear-gradient(0deg, #22d3ee 20%, #5eead4 50%, #ffc98c 80%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #22d3ee 20%, #5eead4 50%, #ffc98c 80%);
+  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-red {
-    background:-webkit-linear-gradient(0deg, #be22ff 20%, #ff279c 50%, #ff1f97 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #be22ff 20%, #ff279c 50%, #ff1f97 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
 .gradient-green {
-    background: -webkit-linear-gradient(0deg, #27ff8f 20%, #71ff04 50%, #fffb1f 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #27ff8f 20%, #71ff04 50%, #fffb1f 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.gradient::selection{
-    -webkit-text-fill-color:white;
+
+.gradient::selection {
+  -webkit-text-fill-color: white;
 }

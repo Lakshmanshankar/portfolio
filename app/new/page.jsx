@@ -26,18 +26,23 @@ export default function Home() {
         }
       </section>
 
-      <section className={`lg:px-20 py-10 md:px-10 xl:w-/12`}>
+      <section className={`lg:px-20 py-5 md:px-10 xl:w-/12 `}>
         <h2 className={`${data.colors[data.current].secondaryText} text-left text-lg lg:text-3xl lg:py-5 font-bold px-5`}>Projects</h2>
         {data.projects.map((project, id) => (
           <Link href={project.source} key={`projectid-${id}`}>
-            <div key={`project-${id}`} className={`lg:p-5 mx-3 rounded-lg py-3 px-2 hover:${data.colors[data.current].hoverColor} hover:${data.colors[data.current].hoverBackground} hover:bg-opacity-10 ` }>
-              <div className="flex justify-between">
-                <h3 className={` font-bold text-md md:text-ld lg:text-xl p-2 hover:transition-all pointer-events-none`}>{project.name}</h3>
+            <div key={`project-${id}`} className={`lg:p-5 mx-3 rounded-lg py-3 px-2 hover:${data.colors[data.current].hoverColor} hover:${data.colors[data.current].hoverBackground} ${data.current ? 'pinkify' : ''} og-background secondary-text hover:bg-opacity-50 animate-translate`}>
+              <div className="flex w-fit h-fit items-end">
+                <h3 className={` font-bold text-md md:text-ld lg:text-xl p-2 hover:transition-all pointer-events-none ${data.current ? 'pinkify' : ' '} secondary-text`}>{project.name}</h3>
+                <div className={`${data.colors[data.current].primaryText} font-bold text-base text-opacity-70 pb-4`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-4 h-4 hover:transition-all hover:translate-x-2 translate-px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </div>
               </div>
               <p className={`${data.colors[data.current].primaryText} p-2`}>{project.description}</p>
               <ul className="flex justify-evenly w-fit h-fit p-0 m-0">
-                {project.technologies.map((tech,id) => (
-                  <li className={`p-2 hover:${data.colors[data.current].hoverColor} h-fit mx-1 px-2 py-[4px] rounded-full ${data.colors[data.current].selectBg} bg-opacity-10`} key={`tech-${id}`}>{tech}</li>
+                {project.technologies.map((tech, id) => (
+                  <li className={`p-2 h-fit mx-1 px-2 py-[4px] rounded-full ${data.current ? 'pinkify' : ''} background-current bg-opacity-90`} key={`tech-${id}`}>{tech}</li>
                 ))}
               </ul>
             </div>
@@ -48,21 +53,21 @@ export default function Home() {
       <section className={`lg:px-20 py-5 md:px-10 xl:w-/12 `}>
         <h2 className={`${data.colors[data.current].secondaryText} text-left text-lg lg:text-3xl lg:py-5 font-bold px-5`}>Experience</h2>
         {data.experience.map((job, id) => (
-            <div key={`project-${id}`} className={`lg:p-5 mx-3 rounded-lg py-3 px-2 hover:${data.colors[data.current].hoverColor} hover:${data.colors[data.current].hoverBackground} hover:bg-opacity-10 ` }>
-              <div className="flex justify-between">
-                <h3 className={` font-bold text-md md:text-ld lg:text-xl p-2 hover:transition-all pointer-events-none`}>{job.company}</h3>
-                <div className={`flex ${data.colors[data.current].primaryText} font-bold text-base text-opacity-70`}>
-                <span className="mx-2 ">{job.from}</span>
-                <span>{job.to}</span>
-                </div>
+          <div key={`project-${id}`} className={`lg:p-5 mx-3 rounded-lg py-3 px-2 hover:${data.colors[data.current].hoverColor} hover:${data.colors[data.current].hoverBackground} ${data.current ? 'pinkify' : ''} og-background secondary-text hover:bg-opacity-50 `}>
+            <div className="flex justify-between">
+              <h3 className={` font-bold text-md md:text-ld lg:text-xl p-2 hover:transition-all pointer-events-none ${data.current ? 'pinkify' : ' '} secondary-text`}>{job.company}</h3>
+              <div className={`flex items-center ${data.colors[data.current].primaryText} font-bold text-base text-opacity-70`}>
+                <span className="mx-2 h-fit">{job.from}</span>
+                <span className="mx-2 h-fit">{job.to}</span>
               </div>
-              <p className={`${data.colors[data.current].primaryText} p-2`}>{job.description}</p>
-              <ul className="flex justify-evenly w-fit h-fit p-0 m-0">
-                {job.skills.map((tech,id) => (
-                  <li className={`p-2 hover:${data.colors[data.current].hoverColor} h-fit mx-1 px-2 py-[4px] rounded-full ${data.colors[data.current].selectBg} bg-opacity-10`} key={`tech-${id}`}>{tech}</li>
-                ))}
-              </ul>
             </div>
+            <p className={`${data.colors[data.current].primaryText} p-2`}>{job.description}</p>
+            <ul className="flex justify-evenly w-fit h-fit p-0 m-0">
+              {job.skills.map((tech, id) => (
+                <li className={`p-2 h-fit mx-1 px-2 py-[4px] rounded-full ${data.current ? 'pinkify' : ''} background-current bg-opacity-90`} key={`tech-${id}`}>{tech}</li>
+              ))}
+            </ul>
+          </div>
         ))}
       </section>
 

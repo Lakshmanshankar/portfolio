@@ -29,7 +29,7 @@ export function Sidebar({ children }) {
       <nav className="fixed top-0 w-full ">
         <ul className="flex w-full justify-center backdrop-blur-md " key={"ul"}>
           {data.paths.map((path, id) => (
-            <li className='py-3' key={`item-${id}`}><a key={`path-${id+Math.random()*23}`} className={`lg:p-3 p-2 py-5 text-base lg:text-xl text-white  cursor-pointer hover:${data.colors[data.current].hoverColor}`}>{path.name}</a></li>
+            <li className='py-3' key={`item-${id}`}><a key={`path-${id + Math.random() * 23}`} className={`lg:p-3 p-2 py-5 text-base lg:text-xl text-white  cursor-pointer hover:${data.colors[data.current].hoverColor} ${data.current ? 'pinkify' : ''} links`}>{path.name}</a></li>
           ))}
         </ul>
       </nav>
