@@ -10,7 +10,7 @@ export default function Home() {
       <header className={`lg:px-20 px-5 ${inter.className}`}>
         <h1 className={`${data.colors[data.current].gradient} text-2xl text-center lg:text-left md:text-4xl lg:text-4xl xl:text-6xl gradient w-full ${interHeader.className}`}>{data.name.toUpperCase()}</h1>
         <h2 className={`${data.colors[data.current].secondaryText} text-center lg:text-left text-lg lg:text-3xl lg:py-5 font-bold`}>{data.role}</h2>
-        <p className={`${data.colors[data.current].primaryText} text-center lg:text-left text-base md:text-xl lg:w-4/5 `}>{data.description}</p>
+        <p className={`text-center lg:text-left text-base md:text-xl lg:w-4/5 text-slate-400`}>{data.description}</p>
       </header>
 
       <section className={`lg:px-20 py-10 px-5 md:px-10 xl:w-/12`}>

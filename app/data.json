@@ -40,7 +40,7 @@
     "I  started using Linux in January 2022; it's almost 2 years now, and I absolutely love everything about Linux. I began with Vim and moved to Neovim, and my dotfiles repository has grown a lot since then. Additionally, I love dark color schemes and gradient texts; you can see them in all my works.",
     "I 'm currently looking for job opportunities. This year has been full of unexpected changes, but I'm hopeful that it will lead to a job offer for me."
   ],
-  "resumeLink": "Lakshpy.pdf",
+  "resumeLink": "resume.pdf",
   "projects": [
     {
       "name": "Honey script Interpreter",
@@ -141,5 +141,5 @@
       "hoverColor": "text-teal-500"
     }
   ],
-  "current": 0
+  "current": 1
 }
