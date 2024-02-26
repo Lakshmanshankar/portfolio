@@ -40,9 +40,9 @@ export default function Home() {
                 </div>
               </div>
               <p className={`${data.colors[data.current].primaryText} p-2`}>{project.description}</p>
-              <ul className="flex justify-evenly w-fit h-fit p-0 m-0">
+              <ul className="flex flex-wrap w-fit h-fit p-0 m-0">
                 {project.technologies.map((tech, id) => (
-                  <li className={`p-2 h-fit mx-1 px-2 py-[4px] rounded-full ${data.current ? 'pinkify' : ''} background-current bg-opacity-90`} key={`tech-${id}`}>{tech}</li>
+                  <li className={`p-2 h-fit mx-1 px-2 mt-2 py-[4px] rounded-full ${data.current ? 'pinkify' : ''} background-current bg-opacity-90`} key={`tech-${id}`}>{tech}</li>
                 ))}
               </ul>
             </div>
@@ -62,17 +62,14 @@ export default function Home() {
               </div>
             </div>
             <p className={`${data.colors[data.current].primaryText} p-2`}>{job.description}</p>
-            <ul className="flex justify-evenly w-fit h-fit p-0 m-0">
+            <ul className="flex flex-wrap w-fit h-fit p-0 m-0">
               {job.skills.map((tech, id) => (
-                <li className={`p-2 h-fit mx-1 px-2 py-[4px] rounded-full ${data.current ? 'pinkify' : ''} background-current bg-opacity-90`} key={`tech-${id}`}>{tech}</li>
+                <li className={`p-2 h-fit mx-1 mt-2 px-2 py-[4px] rounded-full ${data.current ? 'pinkify' : ''} background-current bg-opacity-90`} key={`tech-${id}`}>{tech}</li>
               ))}
             </ul>
           </div>
         ))}
       </section>
-
-
-
     </div>
   )
 }
