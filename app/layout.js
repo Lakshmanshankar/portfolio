@@ -1,19 +1,27 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "./new/Components/Sidebar";
-import "./new/style.css"
 const inter = Inter({ subsets: ["latin"] });
 
+import { ThemeProvider } from "./v2/ThemeProvider";
+
 export const metadata = {
-  title: "Dev Portfolio ",
-  description: "Lakshmanshankar's Online Portfolio, Developer ",
+  title: "Lakshmanshankar portfolio ",
+  description:
+    "Lakshmanshankar portflio, I am fullstack developer with skills in modern web technologies and linux systems",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Sidebar>{children}</Sidebar>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem={true}
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

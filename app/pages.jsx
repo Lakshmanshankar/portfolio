@@ -34,8 +34,8 @@ export default function Home() {
               <div className="flex w-fit h-fit items-end">
                 <h3 className={` font-bold text-md md:text-ld lg:text-xl p-2 hover:transition-all pointer-events-none ${data.current ? 'pinkify' : ' '} secondary-text`}>{project.name}</h3>
                 <div className={`${data.colors[data.current].primaryText} font-bold text-base text-opacity-70 pb-4`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-4 h-4 hover:transition-all hover:translate-x-2 translate-px">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="white" class="w-4 h-4 hover:transition-all hover:translate-x-2 translate-px">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                 </div>
               </div>

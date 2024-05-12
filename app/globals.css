@@ -11,28 +11,56 @@
   box-sizing: border-box;
 }
 
-body {}
+:root {
+  --primary: white;
+  --primary-fg: #09090b;
 
-/* ::-webkit-scrollbar { */
-/*   width: 0px; */
-/* } */
+  --secondary: #e5e5e5;
 
-/**/
-/* ::-webkit-scrollbar-track { */
-/*   background-color: transparent; */
-/* } */
-/**/
-/* ::-webkit-scrollbar-thumb { */
-/*   background-color: rgba(34, 255, 240, 0.4); */
-/*   border-radius: 6px; */
-/* } */
-/**/
-/* ::-webkit-scrollbar-thumb:hover { */
-/*   transition: 0.3s; */
-/*   width: 24px; */
-/*   background-color: rgb(0, 255, 208); */
-/* } */
-/**/
+  --secondary-bg: #e7e5e4;
+  --primary-text: #404040;
+}
+
+.dark {
+  --primary: #0a0a0a;
+  --primary-fg: #f8fafc;
+
+  --secondary: #27272a;
+  --primary-text: #a1a1aa;
+
+  --secondary-bg: #44403c;
+}
+
+body {
+  background: var(--primary);
+}
+.colored {
+  background: var(--primary);
+  color: var(--primary-fg);
+}
+
+.primary-text {
+  color: var(--primary-text);
+}
+.secondary-border {
+  border-color: var(--secondary);
+}
+.secondary-hover:hover {
+  background: var(--secondary-bg);
+}
+b,
+strong {
+  font-weight: 500;
+  color: var(--primary-fg);
+}
+
+mark {
+  background: var(--secondary);
+  color: var(--primary-fg);
+  padding: 2px;
+  border-radius: 4px;
+}
+
 .icons {
   pointer-events: auto;
   margin: 10px;
@@ -45,21 +73,47 @@ body {}
   filter: invert(100%);
 }
 
-a {
-  padding: 10px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.2s;
-  /* color: aliceblue; */
-  -webkit-tap-highlight-color: transparent;
+.gradient-blue {
+  background: -webkit-linear-gradient(
+    0deg,
+    #22d3ee 20%,
+    #5eead4 50%,
+    #ffc98c 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-a:hover {
-  translate: 10px;
-  transition: 0.3s;
-  cursor: pointer;
-  /* text-decoration: underline; */
+.gradient-red {
+  background: -webkit-linear-gradient(
+    0deg,
+    #be22ff 20%,
+    #ff279c 50%,
+    #ff1f97 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.gradient::selection {
+  -webkit-text-fill-color: var(--primary-fg);
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-snap-destination: 0% 100%;
+  overscroll-behavior-y: none;
+  scroll-padding: 50px; /* Adjust as needed */
+}
+/* a:hover { */
+/*   translate: 10px; */
+/*   transition: 0.3s; */
+/*   cursor: pointer; */
+/*   z-index: 1; */
+/*   /* text-decoration: underline; */
+/* } */
 
 /*
 .links {
