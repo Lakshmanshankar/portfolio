@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import data from "./data.json";
 
 import { IconsType, ModeToggle, RenderSocial } from "./v2/theme";
+import { Skills } from "./v2/SkillBanner";
 
 const brains = JetBrains_Mono({ weight: "400", subsets: ["greek"] });
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
             👋 Hii, I am
           </p>
           <h1 className="gradient-red text-xl md:text-4xl font-extrabold text-center lg:text-left">
-            LAKSHMANSHANKAR
+            Lakshmanshankar
           </h1>
           <h2 className="text-md md:text-xl my-1 text-center lg:text-left ">
             Full stack Developer
@@ -103,7 +103,13 @@ export default function Home() {
           </p>
         </section>
 
-        <section className={`px-5 md:px-10 lg:px-0`} id="project">
+        <section className={`px-5 md:px-10 lg:px-0`} id="skills">
+          <h2 className={`text-left text-md lg:text-2xl font-semibold bg-transparent`}>
+            Skills and Interests
+          </h2>
+          <Skills />
+          <section className={`px-5 md:px-10 lg:px-0`} id="project">
+          </section>
           <h2 className={`colored text-left text-md lg:text-2xl font-semibold`}>
             Projects
           </h2>
