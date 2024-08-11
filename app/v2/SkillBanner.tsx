@@ -26,12 +26,12 @@ export function Skills() {
     >
       <div className='rounded-xl min-h-[250px] px-7 flex items-center'
         style={showGradient ? {
-          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(40, 5, 20, 0.9), rgba(10, 10, 10, 0.9))`,
+          background: `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(235, 35, 180, 0.19), rgba(30, 10, 10, 0))`,
         } : {}}
       >
-        <div className='w-full'>
+        <div className='w-full primary-text '>
           {/* <p className='text-neutral-400 text-lg'>have experience in </p> */}
-          <ul className='flex flex-col justify-center text-lg text-neutral-400 break-words'>
+          <ul className='flex flex-col justify-center text-lg break-words bg-transparent'>
             <li>1. Web Applications </li>
             <li>2. Developer Tooling</li>
             <li className='w-[80%]'> Also interested in Problem solving</li>
@@ -69,7 +69,7 @@ export function Skills() {
 }
 export function Tile({ title }: { title: ImageKeys }) {
 
-  return <div className='w-14 h-14 bg-neutral-950 rounded-lg m-1 border flex justify-center items-center break-words border-neutral-800 hover:scale-125 transition-transform '>
+  return <div className='w-14 h-14 bg-transparent rounded-lg m-1 flex justify-center items-center break-words hover:scale-125 transition-transform '>
     <Image src={ImageMap[title]} alt={title} width={40} height={40} />
   </div>
 }
